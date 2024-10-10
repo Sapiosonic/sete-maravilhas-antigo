@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2e8d9ffe86d3a702ee8a2e6bc971c36e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2e8d9ffe86d3a702ee8a2e6bc971c36e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2e8d9ffe86d3a702ee8a2e6bc971c36e = L.map(
+                "map_2e8d9ffe86d3a702ee8a2e6bc971c36e",
+                {
+                    center: [35.5322, 25.0928],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_2e8d9ffe86d3a702ee8a2e6bc971c36e);
+
+            
+
+        
+    
+            var tile_layer_598f3c2ba47bb6bdc2d2c4e722b5ef70 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_598f3c2ba47bb6bdc2d2c4e722b5ef70.addTo(map_2e8d9ffe86d3a702ee8a2e6bc971c36e);
+        
+    
+            var tile_layer_376fbc30330fcf5c088131c21cc95beb = L.tileLayer(
+                "https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "Tiles courtesy of the \u003ca href=\"https://usgs.gov/\"\u003eU.S. Geological Survey\u003c/a\u003e", "detectRetina": false, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_376fbc30330fcf5c088131c21cc95beb.addTo(map_2e8d9ffe86d3a702ee8a2e6bc971c36e);
+        
+    
+            var marker_37c27d8ecc6746a53d21c0f0a02b8732 = L.marker(
+                [29.9792, 31.1344],
+                {}
+            ).addTo(map_2e8d9ffe86d3a702ee8a2e6bc971c36e);
+        
+    
+            var icon_6b78af306208e4aecd3c6a840519be9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-camera", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_37c27d8ecc6746a53d21c0f0a02b8732.setIcon(icon_6b78af306208e4aecd3c6a840519be9c);
+        
+    
+        var popup_ab0a22279f7419e6f25396f3a44f50ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6024a791f2ad60bf0d17f67c2e447bd5 = $(`<div id="html_6024a791f2ad60bf0d17f67c2e447bd5" style="width: 100.0%; height: 100.0%;">Grande Pirâmide de Gizé</div>`)[0];
+                popup_ab0a22279f7419e6f25396f3a44f50ce.setContent(html_6024a791f2ad60bf0d17f67c2e447bd5);
+            
+        
+
+        marker_37c27d8ecc6746a53d21c0f0a02b8732.bindPopup(popup_ab0a22279f7419e6f25396f3a44f50ce)
+        ;
+
+        
+    
+    
+            var marker_5fa585907a1dc307db1b2d0290b8da7a = L.marker(
+                [32.5354, 44.455],
+                {}
+            ).addTo(map_2e8d9ffe86d3a702ee8a2e6bc971c36e);
+        
+    
+            var icon_5f18c65dfa1192ca749f4d2558ff1209 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-camera", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_5fa585907a1dc307db1b2d0290b8da7a.setIcon(icon_5f18c65dfa1192ca749f4d2558ff1209);
+        
+    
+        var popup_5579828781d5abdae2a6eb63b95d9a6e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3da344c1fceea92c1d7b2dc33e5bf958 = $(`<div id="html_3da344c1fceea92c1d7b2dc33e5bf958" style="width: 100.0%; height: 100.0%;">Jardins Suspensos da Babilônia</div>`)[0];
+                popup_5579828781d5abdae2a6eb63b95d9a6e.setContent(html_3da344c1fceea92c1d7b2dc33e5bf958);
+            
+        
+
+        marker_5fa585907a1dc307db1b2d0290b8da7a.bindPopup(popup_5579828781d5abdae2a6eb63b95d9a6e)
+        ;
+
+        
+    
+    
+            var marker_92cb6d463bbbcf7559c2900deed927a0 = L.marker(
+                [37.9496, 27.3913],
+                {}
+            ).addTo(map_2e8d9ffe86d3a702ee8a2e6bc971c36e);
+        
+    
+            var icon_0ad997b7bd48dd2fd2b00138f3b987e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-camera", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_92cb6d463bbbcf7559c2900deed927a0.setIcon(icon_0ad997b7bd48dd2fd2b00138f3b987e0);
+        
+    
+        var popup_0c40d613ec713a6784414c182e341304 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f9ceed70bab8b0500f55477ffb8ec6f4 = $(`<div id="html_f9ceed70bab8b0500f55477ffb8ec6f4" style="width: 100.0%; height: 100.0%;">Templo de Ártemis</div>`)[0];
+                popup_0c40d613ec713a6784414c182e341304.setContent(html_f9ceed70bab8b0500f55477ffb8ec6f4);
+            
+        
+
+        marker_92cb6d463bbbcf7559c2900deed927a0.bindPopup(popup_0c40d613ec713a6784414c182e341304)
+        ;
+
+        
+    
+    
+            var marker_b89cc3166a02d244471724d20274fc5d = L.marker(
+                [37.6378, 21.6575],
+                {}
+            ).addTo(map_2e8d9ffe86d3a702ee8a2e6bc971c36e);
+        
+    
+            var icon_3758443a26272e9652ee6dd1853442d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-camera", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_b89cc3166a02d244471724d20274fc5d.setIcon(icon_3758443a26272e9652ee6dd1853442d8);
+        
+    
+        var popup_5b9c481a61bfb642e4f2e493614ced0f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b32e8254face06c32ddc8874e549bbba = $(`<div id="html_b32e8254face06c32ddc8874e549bbba" style="width: 100.0%; height: 100.0%;">Estátua de Zeus em Olímpia</div>`)[0];
+                popup_5b9c481a61bfb642e4f2e493614ced0f.setContent(html_b32e8254face06c32ddc8874e549bbba);
+            
+        
+
+        marker_b89cc3166a02d244471724d20274fc5d.bindPopup(popup_5b9c481a61bfb642e4f2e493614ced0f)
+        ;
+
+        
+    
+    
+            var marker_1de26567c262999e7db6442352503549 = L.marker(
+                [37.0378, 27.4516],
+                {}
+            ).addTo(map_2e8d9ffe86d3a702ee8a2e6bc971c36e);
+        
+    
+            var icon_d57e8f79120f20852534bb36c16a2128 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-camera", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_1de26567c262999e7db6442352503549.setIcon(icon_d57e8f79120f20852534bb36c16a2128);
+        
+    
+        var popup_bc06fe33beed8308b4176e00aa23d812 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b7bca81a142e9f72a2765a92a0852aa6 = $(`<div id="html_b7bca81a142e9f72a2765a92a0852aa6" style="width: 100.0%; height: 100.0%;">Mausoléu de Halicarnasso</div>`)[0];
+                popup_bc06fe33beed8308b4176e00aa23d812.setContent(html_b7bca81a142e9f72a2765a92a0852aa6);
+            
+        
+
+        marker_1de26567c262999e7db6442352503549.bindPopup(popup_bc06fe33beed8308b4176e00aa23d812)
+        ;
+
+        
+    
+    
+            var marker_8084d9e0eb99802c098d4ed1904f4289 = L.marker(
+                [36.451, 28.2553],
+                {}
+            ).addTo(map_2e8d9ffe86d3a702ee8a2e6bc971c36e);
+        
+    
+            var icon_392ef1e5c261fa9573d486ffcb9e791d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-camera", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_8084d9e0eb99802c098d4ed1904f4289.setIcon(icon_392ef1e5c261fa9573d486ffcb9e791d);
+        
+    
+        var popup_97e36046c0c2da314db81a69fa7a8c09 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a41b16b14e6cc74545200e33c830f618 = $(`<div id="html_a41b16b14e6cc74545200e33c830f618" style="width: 100.0%; height: 100.0%;">Colosso de Rodes</div>`)[0];
+                popup_97e36046c0c2da314db81a69fa7a8c09.setContent(html_a41b16b14e6cc74545200e33c830f618);
+            
+        
+
+        marker_8084d9e0eb99802c098d4ed1904f4289.bindPopup(popup_97e36046c0c2da314db81a69fa7a8c09)
+        ;
+
+        
+    
+    
+            var marker_79bcae41748000d8b6cdb27914786b4b = L.marker(
+                [31.2138, 29.913],
+                {}
+            ).addTo(map_2e8d9ffe86d3a702ee8a2e6bc971c36e);
+        
+    
+            var icon_db7a8e24fead7b7c5fedd22df4ad3503 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-camera", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_79bcae41748000d8b6cdb27914786b4b.setIcon(icon_db7a8e24fead7b7c5fedd22df4ad3503);
+        
+    
+        var popup_c458660efaf6c2bac97fdc526db85e59 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac5c3979f461943a051a4722965a1685 = $(`<div id="html_ac5c3979f461943a051a4722965a1685" style="width: 100.0%; height: 100.0%;">Farol de Alexandria</div>`)[0];
+                popup_c458660efaf6c2bac97fdc526db85e59.setContent(html_ac5c3979f461943a051a4722965a1685);
+            
+        
+
+        marker_79bcae41748000d8b6cdb27914786b4b.bindPopup(popup_c458660efaf6c2bac97fdc526db85e59)
+        ;
+
+        
+    
+    
+                var lat_lng_popup_c7442f3cf61662a4e24bc8e59f91b7ea = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_c7442f3cf61662a4e24bc8e59f91b7ea
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_2e8d9ffe86d3a702ee8a2e6bc971c36e);
+                    }
+                map_2e8d9ffe86d3a702ee8a2e6bc971c36e.on('click', latLngPop);
+            
+</script>
+</html>
